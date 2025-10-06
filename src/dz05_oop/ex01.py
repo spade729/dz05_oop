@@ -50,7 +50,7 @@ class Student:
     def get_info(self):
         return f'Студент {self.name}, возраст {self.age}'
 
-
+print('1)')
 student1 = Student("Анна", 20)
 print(student1.get_info())
 
@@ -71,9 +71,15 @@ class GraduateStudent(Student):
     def publications(self):
         return self.__publications
     
+
+
+print('2)')
 grad_student = GraduateStudent("Петр", 25, "Искусственный интеллект")
 print(grad_student.get_info())   
+
 
 grad_student.add_publication()
 grad_student.add_publication()
 print(grad_student.publications) 
+
+print('3)')
